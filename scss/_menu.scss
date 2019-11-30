@@ -1,0 +1,32 @@
+.menu {
+	min-width: 300px;
+	height: 373px;
+	background: #31383c;
+	display: flex;
+	flex-direction: column;
+}
+.menu li {
+	width: 100%;
+	height: 62px;
+	border-bottom:  1px solid #31383c;	
+}
+.menu li a {
+	display: flex;
+	height: 100%;
+	justify-content: flex-end;
+	align-items: center;
+	color: #ffffff;
+	padding: 0px 60px 0px 0px;
+	text-decoration: none;
+}
+.menu__bgMenuHome {
+	background: #26b2b0;	
+}
+.menu__bg {
+	background: #31383c;
+	transition: background .5s;
+}
+.menu__bg:hover {
+	cursor: pointer;
+	background: #26b2b0;
+} 

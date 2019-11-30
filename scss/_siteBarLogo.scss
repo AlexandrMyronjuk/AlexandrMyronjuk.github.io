@@ -1,0 +1,39 @@
+.siteBarLogo {
+	width: 100%;
+	height: 125px;  
+	background: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+	a {
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+	}
+	&__block {
+		display: block;
+		margin-top: 42px;
+		margin-right: 91px;
+		text-align: right;
+	}
+	&__kappe {
+		font-size: 38px;
+		color: #364048;
+	}
+	&__forCreatives {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	&__for p {
+		writing-mode: tb-rl;
+		transform:rotate(180deg);
+		font-size:15px;
+		color: #d1d1d1;
+	}
+	&__creatives {
+		font-size: 15px;
+		color: #d1d1d1;
+	}
+}

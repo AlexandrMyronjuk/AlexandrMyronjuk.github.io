@@ -1,0 +1,66 @@
+.submenu {
+	max-width: 150px;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 100px;
+	left: 0px;
+	z-index: -1;
+	&__buttom {
+		width: 70px;
+		height: 85px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		background: #ffffff;
+		opacity: .7;
+		padding-top: 20px;
+		.submenuButtom__tr {
+			width: 40px;
+			height: 5px;
+			display: flex;
+			background: #28b4b2;
+			margin-bottom: 5px;
+		}
+	}
+	&__bgMenuHome {
+		background: #26b2b0;	
+	}
+	&__bg {
+		background: #31383c;
+		transition: background .5s;
+	}
+	&__bg:hover {
+		cursor: pointer;
+		background: #26b2b0;
+	} 
+	&__hover {
+		min-width: 150px;
+		max-width: 150px;
+		background: #31383c;
+		display: flex;
+		flex-direction: column;
+		opacity: .7;
+		transition: transform .5s;
+		transform: translateX( -160px );
+		li {
+			width: 100%;
+			height: 50px;
+			border-bottom:  1px solid #31383c;
+			a {
+				display: flex;
+				height: 100%;
+				justify-content: flex-end;
+				align-items: center;
+				color: #ffffff;
+				padding: 0px 20px 0px 0px;
+				text-decoration: none;
+			}	
+		}
+	}
+}
+.submenu:hover .submenu__hover {
+		transform: translateX( 0px );
+	}
+
