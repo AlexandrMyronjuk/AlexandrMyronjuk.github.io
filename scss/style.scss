@@ -3,5 +3,171 @@
 @import "fonts";
 @import "settings";
 
+.header {
+    &__top {
+        margin-top: 10px;
+        //background-color: red;
+    }
+    &__menu-list {
+        position: relative;
+        @include flex(flex-end);
+        min-height: 45px;
+    }
+    &__menu-item {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+    &__phone {
+        font-weight: 500;
+        color: #000;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: -22px;
+            width: 12px;
+            height: 12px;
+            background-image: url('../img/phone.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__singup {
+        padding: 5px 20px;
+        margin-left: 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #000;
+
+    }
+    &__main {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+    &__desc {
+        margin: 60px 0px;
+        text-align: center;
+        color: #29211e;
+    }
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 42px;
+        margin-bottom: 20px;
+    }
+    &__desc-author {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+    &__btn {
+        @include flex-sb-center;
+        margin-bottom: 20px;
+    }
+    &__btn-item {
+        @include flex;
+        width: 160px;
+        height: 48px;
+        border: 2px solid #5AAE86;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        color: #5AAE86;
+        &--active {
+            background-color: #5AAE86;
+            color: #fff;
+        }
+    }
+    &__desc-text {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14px;
+    }
+    &__main-img {}
+}
+
+@media (min-width: 1024px) {
+    .header {
+        &__menu-list {
+            min-height: 60px;
+        }
+        &__menu-item {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__logo {
+            width: 60px;
+            height: 60px;
+        }
+        &__phone {
+            &::before {
+                top: 2px;
+                left: -26px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+        &__singup {
+            margin-left: 20px;
+        }
+        &__main {
+            position: relative;
+            max-width: 1300px;
+            width: 100%;
+            @include flex (flex-end);
+        }
+        &__desc {
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            width: 745px;
+            text-align: start;
+            color: #29211e;
+        }
+        &__title {
+            font-size: 64px;
+            line-height: 84px;
+        }
+        &__desc-author {
+            font-size: 24px;
+            line-height: 31px;
+        }
+        &__btn {
+            @include flex(start);
+        }
+        &__btn-item {
+            margin-right: 20px;
+        }
+        &__desc-text {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__main-img {
+            height: 870px;
+        }
+    }
+}
+
+@media (min-width: 1330px) {
+    .container {
+        max-width: 1330px;
+    }
+}
+
+
 
 
