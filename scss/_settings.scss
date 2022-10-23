@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.for-mobile {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.btn-reset {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 35px;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,12 @@
+@mixin font-face($font-family, $url, $weight, $style) {
+    @font-face {
+        font-family: "#{$font-family}";
+        src: url('#{$url}.woff2') format("woff2");
+        font-weight: #{$weight};
+        font-display: swap;
+        font-style: $style;
+    }
+}
+
+@include font-face ("Oswald", "../fonts/Oswald-Regular", 400, normal);
+@include font-face ("Inter", "../fonts/Inter-Regular", 400, normal);
