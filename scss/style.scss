@@ -3,6 +3,17 @@
 @import "fonts";
 @import "settings";
 
+
+.title {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 42px;
+    color: #29211e;
+}
+
+
 .header {
     &__top {
         margin-top: 10px;
@@ -97,9 +108,6 @@
         font-weight: 300;
         line-height: 14px;
     }
-    &__main-img {}
-}
-.main {
 }
 .author {
     color: #f9f2ef;
@@ -122,9 +130,46 @@
         line-height: 22px;
     }
 }
+.yourself {
+    background-color: #f9f2ef;
+    padding: 60px 0px;
+    &__box {
+        @include flex-col-all-center;
+    }
+    &__img {
+        width: 157px;
+        height: 283px;
+        margin: 60px 0px;
+    }
+    &__item {
+        position: relative;
+        padding-left: 25px;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        margin-bottom: 30px;
+        p::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #5AAE86;
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            transform: translateY(-50%);
+        }
+    }
+}
+
 
 
 @media (min-width: 1024px) {
+    .title {
+        font-size: 64px;
+        line-height: 84px;
+    }
     .header {
         &__menu-list {
             min-height: 60px;
@@ -200,6 +245,29 @@
             line-height: 33px;
         }
     }
+    .yourself {
+        &__box {
+            @include flex(space-between, center, row-reverse);
+        }
+        &__img {
+            width: 483px;
+            height: 871px;
+        }
+        &__list {
+            width: 600px;
+        }
+        &__item {
+            padding-left: 40px;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 40px;
+            p::before {
+                content: '';
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
 }
 
 @media (min-width: 1330px) {
@@ -207,6 +275,7 @@
         max-width: 1330px;
     }
 }
+
 
 
 
