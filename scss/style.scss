@@ -3,7 +3,12 @@
 @import "fonts";
 @import "settings";
 
-
+body {
+    background-color: #f9f2ef;
+}
+section {
+    padding: 60px 0px;
+}
 .title {
     text-align: center;
     font-family: "Inter", sans-serif;
@@ -11,6 +16,9 @@
     font-weight: 300;
     line-height: 42px;
     color: #29211e;
+    &--color {
+        color: #F9F2EF;
+    }
 }
 
 
@@ -112,7 +120,6 @@
 .author {
     color: #f9f2ef;
     background-color: #5AAE86;
-    padding: 60px 0px;
     &__wrapper {
         @include flex-col-all-center;
     }
@@ -131,8 +138,6 @@
     }
 }
 .yourself {
-    background-color: #f9f2ef;
-    padding: 60px 0px;
     &__box {
         @include flex-col-all-center;
     }
@@ -162,6 +167,42 @@
         }
     }
 }
+.choose-you {
+    color: #f9f2ef;
+    background-color: #29211E;
+    &__item {
+        width: 345px;
+        margin-top: 60px;
+        @include flex-col-all-center;
+        text-align: center; 
+    }
+    &__img {
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+        &::after {
+            content: '';
+            height: 12px;
+            border-radius: 7px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: #5AAE86;
+        }
+        img {
+            width: 300px;
+            height: 285px;
+        }
+    }
+    &__text {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+}
+
 
 
 
@@ -266,6 +307,29 @@
                 width: 24px;
                 height: 24px;
             }
+        }
+    }
+    .choose-you {
+        &__wrapper {
+            @include flex(space-between, flex-start);
+        }
+        &__item {
+            width: 500px;
+        }
+        &__img {
+            width: 100%;
+            &::after {
+                height: 16px;
+                border-radius: 10px;
+            }
+            img {
+                width: 400px;
+                height: 385px;
+            }
+        }
+        &__text {
+            font-size: 24px;
+            line-height: 29px;
         }
     }
 }

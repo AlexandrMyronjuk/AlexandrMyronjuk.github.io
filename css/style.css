@@ -72,6 +72,14 @@ li {
   margin: 0 auto;
 }
 
+body {
+  background-color: #f9f2ef;
+}
+
+section {
+  padding: 60px 0px;
+}
+
 .title {
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -79,6 +87,10 @@ li {
   font-weight: 300;
   line-height: 42px;
   color: #29211e;
+}
+
+.title--color {
+  color: #F9F2EF;
 }
 
 .header__top {
@@ -222,7 +234,6 @@ li {
 .author {
   color: #f9f2ef;
   background-color: #5AAE86;
-  padding: 60px 0px;
 }
 
 .author__wrapper {
@@ -254,11 +265,6 @@ li {
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
-}
-
-.yourself {
-  background-color: #f9f2ef;
-  padding: 60px 0px;
 }
 
 .yourself__box {
@@ -304,6 +310,59 @@ li {
   left: 0px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.choose-you {
+  color: #f9f2ef;
+  background-color: #29211E;
+}
+
+.choose-you__item {
+  width: 345px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.choose-you__img {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.choose-you__img::after {
+  content: '';
+  height: 12px;
+  border-radius: 7px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #5AAE86;
+}
+
+.choose-you__img img {
+  width: 300px;
+  height: 285px;
+}
+
+.choose-you__text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 @media (min-width: 1024px) {
@@ -450,6 +509,39 @@ li {
     content: '';
     width: 24px;
     height: 24px;
+  }
+  .choose-you__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .choose-you__item {
+    width: 500px;
+  }
+  .choose-you__img {
+    width: 100%;
+  }
+  .choose-you__img::after {
+    height: 16px;
+    border-radius: 10px;
+  }
+  .choose-you__img img {
+    width: 400px;
+    height: 385px;
+  }
+  .choose-you__text {
+    font-size: 24px;
+    line-height: 29px;
   }
 }
 
