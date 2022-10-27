@@ -330,8 +330,18 @@ section {
             background-color: #5AAE86;
         }
     }
-    
-
+}
+.footer {
+    @include flex;
+    background-color: #29211E;
+    span {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        color: #F9F2EF;
+        padding: 60px 0px;
+    }
 }
 
 
@@ -538,6 +548,13 @@ section {
             &--width {
                 width: 450px;
             }
+        }
+    }
+    .footer {
+        span {
+            font-size: 20px;
+            line-height: 24px;
+            padding: 113px 0px;
         }
     }
 }
