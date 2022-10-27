@@ -21,7 +21,6 @@ section {
     }
 }
 
-
 .header {
     &__top {
         margin-top: 10px;
@@ -281,6 +280,59 @@ section {
         font-weight: 400;
     }
 }
+.price {
+    background-color: #5AAE86;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    &__wrapper {
+        color: #f9f2ef;
+    }
+    &__box-wrapper {}
+    &__box {
+        @include flex-col-all-center;
+        text-align: center;
+        margin-bottom: 60px;
+        &--first {
+            background-color: #29211E;
+            border-radius: 5px;
+        }
+        &--second {}
+        span {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px; 
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 63px;
+        margin: 30px 0px;
+    }
+    &__text {
+        font-weight: 300;
+    }
+    &__place {
+        font-weight: 500;
+    }
+    &__btn {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        padding: 12px 20px;
+        border-radius: 5px;
+        color: #F9F2EF;
+        background-color: #29211E;
+        margin: 15px 0px 30px 0px;
+        &--bacg-col {
+            background-color: #5AAE86;
+        }
+    }
+    
+
+}
 
 
 
@@ -454,6 +506,38 @@ section {
         &__item {
             font-size: 20px;
             font-weight: 300;
+        }
+    }
+    .price {
+        background-color: #5AAE86;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        &__wrapper {
+            color: #f9f2ef;
+        }
+        &__box-wrapper {
+            @include flex (space-between);
+            gap: 60px;
+        }
+        &__box {
+            
+            &--first {
+            }
+            &--second {
+                border: 2px solid #F9F2EF;
+                border-radius: 10px;
+                padding: 0px 30px;
+            }
+        }
+        &__title {
+            font-size: 64px;
+            line-height: 84px;
+        }
+        &__text {
+            &--width {
+                width: 450px;
+            }
         }
     }
 }
