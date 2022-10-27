@@ -431,6 +431,62 @@ section {
   line-height: 21px;
 }
 
+.instruction__box {
+  width: 345px;
+  margin-top: 60px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.instruction__img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.instruction__img::after {
+  content: '';
+  height: 12px;
+  border-radius: 7px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #29211E;
+}
+
+.instruction__img img {
+  width: 300px;
+  height: 285px;
+}
+
+.instruction__title {
+  font-weight: 600;
+}
+
+.instruction__list {
+  margin-left: 15px;
+}
+
+.instruction__item {
+  list-style: decimal;
+  font-weight: 400;
+}
+
 @media (min-width: 1024px) {
   .title {
     font-size: 64px;
@@ -646,6 +702,44 @@ section {
   }
   .master-class__item-box {
     width: 33%;
+  }
+  .instruction__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .instruction__box {
+    width: 500px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .instruction__img {
+    width: 100%;
+  }
+  .instruction__img::after {
+    height: 16px;
+    border-radius: 10px;
+  }
+  .instruction__img img {
+    width: 400px;
+    height: 385px;
+  }
+  .instruction__title {
+    font-weight: 600;
+  }
+  .instruction__item {
+    font-size: 20px;
+    font-weight: 300;
   }
 }
 

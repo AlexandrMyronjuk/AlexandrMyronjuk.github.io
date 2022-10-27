@@ -241,6 +241,47 @@ section {
         line-height: 21px; 
     }
 }
+.instruction {
+    &__wrapper {}
+    &__box {
+        width: 345px;
+        margin-top: 60px;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &__img {
+        width: 100%;
+        @include flex;
+        position: relative;
+        margin-bottom: 30px;
+        &::after {
+            content: '';
+            height: 12px;
+            border-radius: 7px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: #29211E;
+        }
+        img {
+            width: 300px;
+            height: 285px;
+        }
+    }
+    &__title {
+        font-weight: 600;
+    }
+    &__list {
+        margin-left: 15px;
+    }
+    &__item {
+        list-style: decimal;
+        font-weight: 400;
+    }
+}
+
 
 
 
@@ -387,6 +428,34 @@ section {
             width: 33%;
         }
     }
+    .instruction {
+        &__wrapper {
+            @include flex(space-between, flex-start);
+        }
+        &__box {
+            width: 500px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &__img {
+            width: 100%;
+            &::after {
+                height: 16px;
+                border-radius: 10px;
+            }
+            img {
+                width: 400px;
+                height: 385px;
+            }
+        }
+        &__title {
+            font-weight: 600;
+        }
+        &__item {
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
 }
 
 @media (min-width: 1330px) {
@@ -394,7 +463,6 @@ section {
         max-width: 1330px;
     }
 }
-1
 
 
 
