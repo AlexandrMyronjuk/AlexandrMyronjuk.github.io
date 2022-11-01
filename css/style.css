@@ -67,7 +67,8 @@ li {
 }
 
 .container {
-  min-width: 375px;
+  min-width: 320px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -334,7 +335,7 @@ section {
 }
 
 .choose-you__item {
-  width: 345px;
+  max-width: 345px;
   margin-top: 60px;
   text-align: center;
 }
@@ -445,7 +446,7 @@ section {
 }
 
 .instruction__box {
-  width: 345px;
+  max-width: 345px;
   margin-top: 60px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
